@@ -48,7 +48,7 @@
 .address {
   box-sizing: content-box;
   display: block;
-  width: 240px;
+  max-width: 240px;
   white-space: wrap;
   font-size: 18px;
   font-weight: 400;
@@ -189,11 +189,15 @@
   color: #fff;
   width: 334px;
   height: 563px;
+  flex-grow: 1;
 }
 
 .card-link {
   display: block;
   text-decoration: none;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
   height: 100%;
 }
 
@@ -206,23 +210,14 @@
 
 .card-type-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%;
 }
 
 .card-type-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%;
 }
 
 .card-type-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%;
 }
 
 .card-title {
@@ -297,14 +292,10 @@ line-height: 1.2;
   font-weight: 400;
 }
 
-.letter-spacing-normal {
-letter-spacing: normal;
-}
-
 .letter-spacing-1-procent {
 letter-spacing: 0.01em;
 }
-
+/*
 .letter-spacing-2-procent {
 letter-spacing: 0.02em;
 }
@@ -319,7 +310,7 @@ letter-spacing: 0.02em;
 
 .letter-spacing-negate-1-procent {
   letter-spacing: -0.01em;
-}
+} */
 
 .footer {
   padding: 180px 50px 88px;
