@@ -1,1 +1,366 @@
-/* место для вашего кода */
+.header {
+  margin: 94px 24px 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 105px;
+  align-items: center;
+}
+
+.header-menu {
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 26px;
+}
+
+.header-links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+}
+
+.header-links-list-item a {
+  text-decoration: none;
+}
+
+.header-links-list-item {
+  list-style: circle;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid #000;
+}
+
+.header-link-active {
+  letter-spacing: normal;
+}
+
+.header-links-list-item-no-bullit {
+  list-style: none;
+  border-bottom: none;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-logo img {
+  height: 105px;
+}
+
+.address {
+  box-sizing: content-box;
+  display: block;
+  width: 240px;
+  white-space: wrap;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35;
+  padding-right: 25px;
+  justify-self: right;
+  letter-spacing: 0.18px;
+}
+
+.address a {
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+.address p {
+  letter-spacing: normal;
+}
+
+.cover {
+  margin-top: 94px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 100px;
+  padding-top: 165px;
+  line-height: 1.15;
+}
+
+.aligned-text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding-left: 50px;
+}
+
+.aligned-text-center {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding-left: 336px;
+  line-height: 1;
+}
+
+.aligned-text-right {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding-right: 20px;
+  line-height: 1;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0.3em;
+}
+
+.cover-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 135px 50px 51px 78px;
+}
+
+.cover-description-text {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+
+/* вместо двух следующих классов изначально сделал
+
+.cover-description-text span {
+  letter-spacing: 1.1em;
+}
+
+но при этом уплыло расстояние пробела перед "В" и вообще
+расстояния между слов после запятой были больше, чем в макете.
+Хочу понять, это специфика отрисовки в Figma или действительно
+нужно эти расстояния подгонять? */
+
+.space-letter-spacing {
+  letter-spacing: 1.1em;
+  word-spacing: -7px;
+}
+
+.other-letter-spacing {
+  word-spacing: 18px;
+}
+
+.bet-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lots {
+  padding: 179px 24px 0;
+}
+
+.lots-heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 27px;
+  list-style: none;
+}
+
+.lots-card-list-item {
+  color: #fff;
+  width: 334px;
+  height: 563px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-type-film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.card-type-book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.card-type-picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.card-title {
+padding: 51px 40px 0;
+font-size: 22px;
+font-weight: 700;
+line-height: 1.2;
+text-decoration: underline;
+text-transform: uppercase;
+}
+
+.card-text {
+padding: 0 40px 48px;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.2;
+}
+
+.lots-look-more-link {
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #000;
+}
+
+.about {
+  padding: 146px 24px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.about-logo {
+  display: flex;
+  justify-self: center;
+  margin: 35px 47px 0;
+  background-color: #000;
+  border-radius: 120px;
+  grid-column: 1/2;
+  width: 240px;
+  height: 240px;
+}
+
+.about-logo-image {
+  align-self: center;
+  justify-self: center;
+}
+
+.about-column {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.about-title {
+  padding-top: 136px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.letter-spacing-normal {
+letter-spacing: normal;
+}
+
+.letter-spacing-1-procent {
+letter-spacing: 0.01em;
+}
+
+.letter-spacing-2-procent {
+letter-spacing: 0.02em;
+}
+
+.letter-spacing-3-procent {
+  letter-spacing: 0.03em;
+}
+
+.letter-spacing-4-procent {
+  letter-spacing: 0.04em;
+}
+
+.letter-spacing-negate-1-procent {
+  letter-spacing: -0.01em;
+}
+
+.footer {
+  padding: 180px 50px 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer address {
+  padding-right: 0;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-links-list-item {
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+.footer-link-active {
+  border-bottom: none;
+}
+
+.footer-links-list-item a {
+  text-decoration: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  list-style: none;
+}
+
+.social-icon {
+  height: 48px;
+  width: 48px;
+}
